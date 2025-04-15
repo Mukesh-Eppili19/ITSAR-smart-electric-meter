@@ -8,7 +8,7 @@ db = mysql.connector.connect(
     port= 3306,
     database='itsar_smart_meter',
     username='root',
-    password='242004@Me',
+    password='your password',
 )
 
 # Function to generate OTP
@@ -19,7 +19,7 @@ def generate_otp():
 def send_otp_email(user_id, otp):
     # Set up email details
     sender_email = "mukesheppili17@gmail.com"
-    sender_password = "ktcobmjgnemhiudq"
+    sender_password = "your password"
     receiver_email = email  # Replace with the user's email
     subject = 'OTP for Deletion Confirmation'
     message = f'Hello User {user_id},\n\nYour OTP for deletion confirmation is: {otp}.\n\nThank you.'
@@ -42,7 +42,7 @@ def send_otp_email(user_id, otp):
 def send_confirmation_email(user_id, deletion_status):
     # Set up email details
     sender_email = "mukesheppili17@gmail.com"
-    sender_password = "ktcobmjgnemhiudq"
+    sender_password = "your password"
     receiver_email = email  # Replace with the user's email
     subject = 'Deletion Confirmation'
     message = f'Hello User {user_id},\n\nYour {selected} deletion request has been {"successful" if deletion_status else "canceled"}.\n\nThank you.'
